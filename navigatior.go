@@ -15,7 +15,7 @@ package raycast
 #include "gonavigatior.h"
 */
 import "C"
-import _ "unsafe"
+import "unsafe"
 
 type GOGLoaderMode int
 
