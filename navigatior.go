@@ -1,14 +1,14 @@
 package raycast
 
 /*
-#cgo CFLAGS: -I ${SRCDIR} -I ${SRCDIR}/libs/include
-#cgo CXXFLAGS: -I ${SRCDIR} -I ${SRCDIR}/libs/include -I ${SRCDIR}/libs/include/navigator -I ${SRCDIR}/libs/include/detour -I ${SRCDIR}/libs/include/obstacle -I ${SRCDIR}/libs/include/navigator/unity  -I ${SRCDIR}/libs/include/navigator/standard
+#cgo CFLAGS: -I ${SRCDIR} -I ${SRCDIR}/include
+#cgo CXXFLAGS: -I ${SRCDIR} -I ${SRCDIR}/include -I ${SRCDIR}/include/navigator -I ${SRCDIR}/include/detour -I ${SRCDIR}/include/obstacle -I ${SRCDIR}/include/navigator/unity  -I ${SRCDIR}/include/navigator/standard
 #cgo lnavigation LDFLAGS: -lnavigation
 #cgo navigationa LDFLAGS: -lnavigation -lm -ldl
-#cgo linux,!lnavigation,!navigationa LDFLAGS: -L${SRCDIR}/libs/linux -lnavigation
+#cgo linux,!lnavigation,!navigationa LDFLAGS: -L${SRCDIR}/linux -lnavigation
 #cgo darwin,!lnavigation,!navigationa LDFLAGS: -lnavigation
 #cgo freebsd,!navigationa LDFLAGS: -lnavigation
-#cgo windows,!lnavigation LDFLAGS: -L${SRCDIR}/libs/win64 -lnavigation -lmingwex -lmingw32
+#cgo windows,!lnavigation LDFLAGS: -L${SRCDIR}/win64 -lnavigation -lmingwex -lmingw32
 
 
 #include <stdlib.h>
