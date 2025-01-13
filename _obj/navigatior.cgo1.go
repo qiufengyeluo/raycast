@@ -4,14 +4,14 @@
 package navigatior
 
 /*
-#cgo CFLAGS: -I ${SRCDIR}/libs/include
-#cgo CXXFLAGS: -I ${SRCDIR}/libs/include -I ${SRCDIR}/libs/include/navigator -I ${SRCDIR}/libs/include/detour
+#cgo CFLAGS: -I ${SRCDIR}/include
+#cgo CXXFLAGS: -I ${SRCDIR}/include -I ${SRCDIR}/include/navigator -I ${SRCDIR}/include/detour
 #cgo lnavigation LDFLAGS: -lnavigation
 #cgo navigationa LDFLAGS: -lnavigation -lm -ldl
-#cgo linux,!lnavigation,!navigationa LDFLAGS: -L${SRCDIR}/libs/linux -lnavigation
+#cgo linux,!lnavigation,!navigationa LDFLAGS: -L${SRCDIR}/linux -lnavigation
 #cgo darwin,!lnavigation,!navigationa LDFLAGS: -lnavigation
 #cgo freebsd,!navigationa LDFLAGS: -lnavigation
-#cgo windows,!lnavigation LDFLAGS: -L${SRCDIR}/libs/win64 -lnavigation -lmingwex -lmingw32
+#cgo windows,!lnavigation LDFLAGS: -L${SRCDIR}/win64 -lnavigation -lmingwex -lmingw32
 
 
 #include <stdlib.h>
